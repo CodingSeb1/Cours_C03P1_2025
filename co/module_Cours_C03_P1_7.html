@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Changement de base [C03_P1 : Cinématique du solide]</title>
+		<meta charset="UTF-8" ></meta>
+		<meta name="generator" content="SCENARI 6.3.11 / OpaleExtEmeraude 24.1.0" ></meta>
+		<meta name="revision" content="2024-11-27 03:44" ></meta>
+		<link rel="start" href="module_Cours_C03_P1.html" title="C03_P1 : Cinématique du solide" ></link>
+		<meta name="author" content="S. Lemasle
+" ></meta>
+		<meta name="keywords" content="" ></meta>
+		<meta name="date" content="2025" ></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css" ></link>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_tePlayer/tePlayer.css" ></link>
+		<script>/*<![CDATA[*/
+/*0*/ var scServices = {id:"m3zcdye6"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Cours_C03_P1_7.html", pathToRoot:"../"};
+/*]]>*/</script>
+		<script src="../lib-sc/scCoLib.js" ></script>
+		<script src="../lib-sc/scSiLib.js" ></script>
+		<script src="../lib-sc/scTiLib.js" ></script>
+		<script src="../lib-sc/scPaLib.js" ></script>
+		<script src="../lib-md/s_assmnt.js" ></script>
+		<script src="../lib-sc/scMapMgr.js" ></script>
+		<script src="../lib-sc/scDynUiMgr.js" ></script>
+		<script src="../lib-sc/scTooltipMgr.js" ></script>
+		<script src="../lib-sc/scDragMgr.js" ></script>
+		<script src="../lib-sc/scAssmntMgr.js" ></script>
+		<script src="../lib-md/w_teMgr/teLoader.js" ></script>
+		<script src="../lib-md/w_tplMgr/tplMgr.js" ></script>
+		<script src="../lib-md/s_scSearch/jsSearch.js" ></script>
+		<script src="../lib-md/w_mathjax/mathjaxMgr.js" ></script>
+		<script src="../lib-md/w_tePlayer/tePlayer.js" ></script>
+		<script src="../lib-md/w_scCodeMgr/scCodeMgr.js" ></script>
+		<script src="../lib-md/w_searchMgr/searchMgr.js" ></script>
+		<script src="../lib-md/w_scImageMgr/scImageMgr.js" ></script>
+		<script src="../lib-md/w_outMgr/outMgr.js" ></script>
+		<script>/*<![CDATA[*/
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImageMgr.registerAdaptedImage("ide:content/des:figure.resInFlow/des:img");
+
+scImageMgr.registerGallery("des:div.galFra");
+
+scImageMgr.registerSequence("des:div.seqFra");
+
+scImageMgr.registerSvg("des:svg");
+scImageMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImageMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+tePlayerMgr.init();
+/*]]>*/</script>
+		<link rel="shortcut icon" type="image/png" href="../skin/img/favicon.png" ></link>
+		<meta name="robots" content="index,follow" ></meta>
+		<style ></style>
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print" ></link>
+		<script>/*<![CDATA[*/
+outMgr.declareOutline("outline.txt");
+	/*]]>*/</script>
+</head>
+	<body class="default module expUc">
+		<div id="root"><header id="header"><h1><span>C03_P1 : Cinématique du solide</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden" ></hr><section class="hBk article expUc"><h2 class="hBk_ti"><span>Changement de base</span></h2><div class="hBk_co "><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Passage de la base cylindrique à la base cartésienne</span></h3><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Le passage d'une base à une autre n'est qu'une histoire de projection de vecteurs. Il est déconseillé de tenter ces projections à partir d'une vue 3D : certaines perspectives sont trompeuses, les angles peuvent être représentés négativement et peuvent avoir des valeurs proches de 45° (risque de confusion sinus/cosinus).</p><p>Les projections doivent <strong class="txt_emp_is ">impérativement</strong> s'appuyer sur des figures planes de changement de base : vues 2D définissant un seul angle à la fois. Cet angle doit être positif, de valeur environ 30°.</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label="Utilisation d&apos;une figure plane de changement de base"><div class="resInFlow_co "><img src="../res/chgt_base.png" width="360" height="152" alt="" ></img></div><figcaption class="resInFlow_ti "><div><span class="capTi ">Utilisation d'une figure plane de changement de base</span></div></figcaption></figure></div><div class="rBk "><p>En s'appuyant sur la figure plane, on peut écrire les relations entre les différents vecteurs :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\left \{
+ \begin{array}{l} 
+\vec e_r=\cos \theta \, \vec x_0 + \sin \theta  \, \vec y_0 \\
+ \vec e_\theta = - \sin \theta  \, \vec x_0 + \cos \theta  \, \vec y_0 \\
+ \vec e_z = \vec z_0 
+\end{array} 
+\right . 
+\quad \text{ ou encore } \quad
+ \left \{ 
+\begin{array}{l} 
+\vec x_0=\cos \theta  \, \vec e_r - \sin \theta \,  \vec e_\theta\\ 
+\vec y_0 =  \sin \theta  \, \vec e_r + \cos \theta \, \vec  e_\theta \\
+ \vec z_0 = \vec e_z
+ \end{array}
+ \right .\]</span></div></figure></div></div></div><div class="remark pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Remarque</span></i><span class="hidden"> : </span><span class="title">Cas d'un solide en rotation autour d'un axe fixe</span></span></h4><div class="pBk_co"><div class="rBk "><p>Nous avons vu dans la partie précédente que dans le cas d'un solide en rotation autour d'un axe fixe, le vecteur position est : <span class="txt_mathtex_tl "><span>\(\overrightarrow{OM}(t)= R \, \vec e_r(t)\)</span></span></p><p>Connaissant désormais les composantes de la base cylindriques dans la base cartésiennes, plus précisément celle du vecteur <span class="txt_mathtex_tl "><span>\(\vec e_r\)</span></span> , on peut exprimer le vecteur position dans la base cartésienne en fonction des paramètres cylindriques du mouvement  : <span class="txt_mathtex_tl "><span>\(\overrightarrow{OM}(t)= \, R \, \vec e_r(t) \, = \, R \times (\cos \theta \, \vec x_0 + \sin \theta \, \vec y_0 )= \quad {\vphantom{\left\{\begin{array}{ccc}a\\b\\c\\\end{array}\right\}}}_{(\vec x_0, \vec y_0, \vec z_0)}{ } \left | \begin{array}{c}R \,\cos \theta(t)\\ R \, \sin \theta(t) \\0 \end{array} \right .\quad\)</span></span></p></div></div></div></div></section><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Cas général : les angles d'Euler</span></h3><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><div class="txtRes "><div class="txt "><p>Dans le cas général, l'orientation d'une base par rapport à une autre peut nécessiter jusqu'à 3 paramètres géométriques angulaires. Le paramétrage d'Euler permet de passer d'une base initiale <span class="txt_mathtex_tl "><span>\(B_i : (\vec x_i,\vec y_i,\vec z_i)\)</span></span> à une base quelconque <span class="txt_mathtex_tl "><span>\(B_F : (\vec x_F,\vec y_F,\vec z_F)\)</span></span> en utilisant trois rotations précisément définies :</p><ul class="txt_il "><li class="txt_ili "><p>1<sup class="txt_exp_tl ">ère</sup> rotation , la <strong class="txt_emp_is ">précession</strong> :</p><p> <span class="txt_mathtex_tl "><span>\((\vec x_i,\vec y_i,\vec z_i) \overset{\text{Rotation }(\psi,\vec z_i)}{\longrightarrow} (\vec n,\vec v,\vec z_i)\)</span></span></p></li></ul><ul class="txt_il "><li class="txt_ili "><p>2<sup class="txt_exp_tl ">ème</sup> rotation , la <strong class="txt_emp_is ">nutation</strong> :</p><p><span class="txt_mathtex_tl "><span>\((\vec n,\vec v,\vec z_i) \overset{\text{Rotation }(\theta,\vec n)}{\longrightarrow} (\vec n,\vec w,\vec z_F)\)</span></span></p></li></ul><ul class="txt_il "><li class="txt_ili "><p>3<sup class="txt_exp_tl ">ème</sup> rotation , la <strong class="txt_emp_is ">rotation propre</strong> :</p><p> <span class="txt_mathtex_tl "><span>\((\vec n,\vec w,\vec z_F) \overset{\text{Rotation }(\varphi,\vec z_F)}{\longrightarrow} (\vec x_F,\vec y_F,\vec z_F)\)</span></span></p></li></ul></div><div class="img rgt "><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/Euler.png" width="299" height="261" alt="" ></img></div></figure></div></div></div><div class="rBk "><div class="txtRes "><div class="txt "><p>Les trois angles d'Euler <span class="txt_mathtex_tl "><span>\(\psi, \theta\)</span></span> et <span class="txt_mathtex_tl "><span>\(\varphi\)</span></span> portent le noms des rotations correspondantes :</p><ul class="txt_il "><li class="txt_ili "><p><span class="txt_mathtex_tl "><span>\(\psi\)</span></span> : angle de <strong class="txt_emp_is ">precession</strong> ;</p></li></ul><ul class="txt_il "><li class="txt_ili "><p><span class="txt_mathtex_tl "><span>\(\theta\)</span></span> : angle de <strong class="txt_emp_is ">nutation</strong> ;</p></li></ul><ul class="txt_il "><li class="txt_ili "><p><span class="txt_mathtex_tl "><span>\(\varphi\)</span></span> : angle de<strong class="txt_emp_is "> rotation propre</strong>.</p></li></ul></div><div class="img rgt "><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/Euler_2.PNG" width="300" height="297" alt="" ></img></div></figure></div></div></div><div class="rBk "><p>Pour exprimer les composantes des vecteurs de la base <span class="txt_mathtex_tl "><span>\(B_F : (\vec x_F,\vec y_F,\vec z_F)\)</span></span> en fonction des vecteurs de la base <span class="txt_mathtex_tl "><span>\(B_i : (\vec x_i,\vec y_i,\vec z_i)\)</span></span>, on réalise les 3 figures planes de changement de base. On détermine alors par projections successives et pour chaque rotation les composantes des vecteurs de la base d'arrivée dans la base de départ.</p></div><div class="rBk "><div class="txtRes "><div class="txt "><ul class="txt_il "><li class="txt_ili "><p><strong class="txt_emp_is ">Précession</strong> :</p></li></ul><p><span class="txt_mathtex_tl "><span>\(\left \{\begin{array}{l}\vec n =\cos \psi \, \vec x_i + \sin \psi \, \vec y_i \\\vec v = - \sin \psi \, \vec x_i + \cos \psi \, \vec y_i \\\vec z_i \end{array}\right .\)</span></span></p></div><div class="img rgt "><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/precession.PNG" width="198" height="143" alt="" ></img></div></figure></div></div></div><div class="rBk "><div class="txtRes "><div class="txt "><ul class="txt_il "><li class="txt_ili "><p><strong class="txt_emp_is ">Nutation</strong> :</p></li></ul><p><span class="txt_mathtex_tl "><span>\(\left \{\begin{array}{l}\vec n \\ \vec w= \cos \theta \, \vec v + \sin \theta \, \vec z_i \\ \vec z_F = - \sin \theta \, \vec v + \cos \theta \, \vec z_i \\ \end{array}\right .\)</span></span></p></div><div class="img rgt "><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/nutation.PNG" width="198" height="138" alt="" ></img></div></figure></div></div></div><div class="rBk "><div class="txtRes "><div class="txt "><ul class="txt_il "><li class="txt_ili "><p><strong class="txt_emp_is ">Rotation propre</strong> :</p></li></ul><p><span class="txt_mathtex_tl "><span>\(\left \{\begin{array}{l} \vec x_F= \cos \varphi \, \vec n + \sin \varphi \, \vec w \\ \vec y_F = - \sin \varphi\, \vec n + \cos \varphi \, \vec w \\\vec z_F \end{array}\right .\)</span></span></p></div><div class="img rgt "><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/rotation_propre.PNG" width="198" height="142" alt="" ></img></div></figure></div></div></div><div class="rBk "><p>Au final, on obtient :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{
+ \,
+\vec x_F =  
+{\vphantom{\left\{\begin{array}{ccc}a\\b\\c\\\end{array}\right\}}}_{(\vec x_i, \vec y_i, \vec z_i)}{ }
+ \left | \begin{array}{c}
+\cos \varphi \, \cos \psi - \sin \varphi \, \cos \theta \, \sin \psi \\
+\cos \varphi \, \sin \psi + \sin \varphi \, \cos \theta \, \cos \psi  \\
+\sin \varphi \, \sin \theta
+\end{array} \right .
+\,
+}
+\text{  ,  }
+\, 
+\boxed{
+\vec y_F =  
+{\vphantom{\left\{\begin{array}{ccc}a\\b\\c\\\end{array}\right\}}}_{(\vec x_i, \vec y_i, \vec z_i)}{ }
+ \left | \begin{array}{c}
+-\sin \varphi \, \cos \psi - \cos \varphi \, \cos \theta \, \sin \psi \\
+-\sin \varphi \, \sin \psi + \cos \varphi \, \cos \theta \, \cos \psi  \\
+\cos \varphi \, \sin \theta
+\end{array} \right .
+\,
+}
+\]</span></div></figure></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\text{ et  }
+\, 
+\boxed{
+\vec z_F =  
+{\vphantom{\left\{\begin{array}{ccc}a\\b\\c\\\end{array}\right\}}}_{(\vec x_i, \vec y_i, \vec z_i)}{ }
+ \left | \begin{array}{c}
+ \sin \theta \, \sin \psi \\
+-\sin \theta \, \cos \psi  \\
+\cos \theta
+\end{array} \right .
+\,
+}\]</span></div></figure></div><div class="rBk "><p>Ce résultat n'est pas à apprendre, mais la démarche permettant de le retrouver doit être maîtrisée.</p></div></div></div></div></section></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden" ></hr><nav class="pageTurner" role="navigation"><ul><li class="pagePrev"><a rel="prev" target="_self" href="module_Cours_C03_P1_6.html" class="btnNav prev" title="Précédent (Position d&apos;un point d&apos;un solide dans un référentiel)"><span>Précédent</span></a></li><li class="pageNext"><a rel="next" target="_self" href="module_Cours_C03_P1_8.html" class="btnNav next" title="Suivant (Trajectoire d&apos;un point d&apos;un solide)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav aria-label="menu principal" class="pageSelector" id="menu" role="navigation" tabindex="-1"><hr class="hidden" ></hr><ul class="mnu static" data-totalPages="16"><li class="sel_no anc_no type_l  dpt_0 obj"><div class="lbl type_l" id="module_Cours_C03_P1_1.html"><a href="module_Cours_C03_P1_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C03_P1_2.html"><a href="module_Cours_C03_P1_2.html" target="_self" class="item" type="up"><span>Cinématique d'un solide indéformable</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C03_P1_4.html"><a href="module_Cours_C03_P1_4.html" target="_self" class="item"><span>Solide indéformable</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C03_P1_5.html"><a href="module_Cours_C03_P1_5.html" target="_self" class="item"><span>Mouvements et Référentiel d'étude</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C03_P1_6.html"><a href="module_Cours_C03_P1_6.html" target="_self" class="item"><span>Position d'un point d'un solide dans un référentiel</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C03_P1_7.html"><span class="item"><span>Changement de base</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C03_P1_8.html"><a href="module_Cours_C03_P1_8.html" target="_self" class="item"><span>Trajectoire d'un point d'un solide</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C03_P1_9.html"><a href="module_Cours_C03_P1_9.html" target="_self" class="item"><span>Vitesse d'un point appartenant à un solide</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C03_P1_10.html"><a href="module_Cours_C03_P1_10.html" target="_self" class="item"><span>Composition des mouvements</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C03_P1_11.html"><a href="module_Cours_C03_P1_11.html" target="_self" class="item"><span>Torseur cinématique</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C03_P1_12.html"><a href="module_Cours_C03_P1_12.html" target="_self" class="item"><span>Vecteur accélération</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C03_P1_13.html"><a href="module_Cours_C03_P1_13.html" target="_self" class="item"><span>Lois de mouvement - Lois horaires</span></a></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C03_P1_3.html"><a href="module_Cours_C03_P1_3.html" target="_self" class="item"><span>Cinématique du contact ponctuel</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden" ></hr><nav class="headingSelector" role="navigation"><ul class="mnu tools"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Cours_C03_P1.html" target="_self" class="item" type="index" title="Page d&apos;accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" tabindex="-1"><hr class="hidden" ></hr><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale" title="Réalisé avec SCENARI (nouvelle fenêtre)"><span><img alt="Réalisé avec Scenari (nouvelle fenêtre)" src="../skin/img/tpl/scBtn.png" ></img></span></a></footer></div>
+		<script src="../skin/js/skin.js" ></script>
+		<script>/*<![CDATA[*/
+/* 5 */ outMgr.init();
+/* 5 */ scCodeMgr.init();
+/* 5 */ scImageMgr.init();
+/* 0 */ tplMgr.init({accessBar:"none",themeMode:"none",addMenuBtn:false});
+/*]]>*/</script>
+		<script>/*<![CDATA[*/mathjaxMgr.init();/*]]>*/</script></body></html>
